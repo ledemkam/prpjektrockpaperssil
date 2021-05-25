@@ -1,0 +1,175 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.inter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10% auto;
+    background-color: #000;
+    width: 500px;
+    height: 660px;
+}
+
+.firstcontain{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.inpradio{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid #fff;
+    width: 300px;
+    height: 150px;
+}
+
+
+.score{
+    display: flex;
+    justify-content:space-evenly;
+    border: 2px solid #fff;
+    position: relative;
+    width: 300px;
+    height: 70px;
+    top: 15px;
+    
+}
+.user, .comp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: crimson;
+    color: #fff;
+    font-size: 10px;
+}
+.user{
+    top: 20px;
+    z-index: 5;
+    left: -12px;
+
+}
+.comp{
+    top: 20px;
+    left: 290px;
+    z-index: 5;
+}
+
+.num{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 70px;
+
+}
+#reSult{
+    text-align: center;
+    color: #fc121c;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+#imggame{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin-right: 20px;
+   
+}
+#butt{
+    display: flex;
+   justify-content: space-around;
+   width: 300px;
+   
+}
+
+#Rock{
+    background-image: url(../img/icons8-hand_-felsen-50.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 65%;
+    display: flex;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    width: 10vh;
+    height: 10vh;
+  
+   
+}
+ #Paper{
+    background-image: url(../img/icons8-ganze-hand-80.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 65%;
+    display: flex;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    width: 10vh;
+    height: 10vh;
+    
+   
+ }
+ 
+ #Scissors{
+   background-image: url(../img/icons8-hand_-schere-50.png);
+   background-color: transparent;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 65%;
+   display: flex;
+   border: 3px solid #fff;
+   border-radius: 50%;
+   width: 10vh;
+   height: 10vh;
+  
+ 
+}
+
+
+.circle:hover {
+    cursor: pointer;
+    border: 5px dotted aquamarine;
+    padding: 15px;
+    
+  }
+
+.reset{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.buttonsgreen{
+    border: 4px solid #4dcc7d;
+    box-shadow: 0 0 10px #31b43a;
+}
+.buttonsred{
+    border: 4px solid #fc121c;
+    box-shadow: 0 0 10px #d01115;
+}
+.buttonsgraw{
+    border: 4px solid  #464647;
+    box-shadow: 0 0 10px #25292b;
+}
+
+
+
+
+
