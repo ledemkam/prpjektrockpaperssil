@@ -10,34 +10,44 @@
 </head>
 
 <body>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
     <main class="hero">
-        <h1>Rock Paper Scissors</h1>
+        <h2>Rock Paper Scissors</h2>
         <article class="inter">
             <section class="firstcontain">
 
                 <div class="inpradio">
                     <h4>how many rounds?</h4><br>
-                    <div>
+                    <div class="roundcount"></div>
+                    <div class="roundcountselect">
+                        <div>
                         <div>
                             <input type="radio" name="round" class="five" id="firstRound" value="5"
-                                onchange="roundsGame()" checked />5
+                                    onchange="roundsGame()" checked />5
+                            
                         </div>
                         <div>
                             <input type="radio" name="round" class="five" id="secondRound" value="10"
-                                onchange="roundsGame()" />10
+                                    onchange="roundsGame()" checked/>10
                         </div>
                     </div>
-
+    
                     <div>
                         <div>
                             <input type="radio" name="round" class="five" id="thirdRound" value="15"
-                                onchange="roundsGame()" />15
+                                    onchange="roundsGame()" checked />15
                         </div>
                         <div>
                             <input type="radio" name="round" class="five" id="fourRound" value="20"
-                                onchange="roundsGame()" />20
+                                    onchange="roundsGame()" checked/>20
                         </div>
                     </div>
+                    </div>
+                </div>
+                
                 </div>
 
                 <div class="score">
@@ -55,6 +65,7 @@
                 <p>Lets play</p>
             </div>
             <div id="winnershow"></div>
+            <div class="gamesend"> End of the Game!!!</div>
 
             <section id="imggame">
                 <div id="butt">
