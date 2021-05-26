@@ -10,66 +10,65 @@
 </head>
 
 <body>
-    <main class="inter">
+    <main class="hero">
+        <h1>Rock Paper Scissors</h1>
+        <article class="inter">
+            <section class="firstcontain">
 
-        <!--   <div class="many">
-            <h4>how many rounds?</h4>
-        </div>-->
-
-        <article class="firstcontain">
-            <div class="inpradio">
-                <h4>how many rounds?</h4><br>
-                <div>
+                <div class="inpradio">
+                    <h4>how many rounds?</h4><br>
                     <div>
-                        <p> <input type="radio" name="round" class="five" id="firstRound" value="5"
+                        <div>
+                            <input type="radio" name="round" class="five" id="firstRound" value="5"
                                 onchange="roundsGame()" checked />5
-                        </p>
+                        </div>
+                        <div>
+                            <input type="radio" name="round" class="five" id="secondRound" value="10"
+                                onchange="roundsGame()" />10
+                        </div>
                     </div>
+
                     <div>
-                        <p><input type="radio" name="round" class="five" id="secondRound" value="10"
-                                onchange="roundsGame()" />10</p>
+                        <div>
+                            <input type="radio" name="round" class="five" id="thirdRound" value="15"
+                                onchange="roundsGame()" />15
+                        </div>
+                        <div>
+                            <input type="radio" name="round" class="five" id="fourRound" value="20"
+                                onchange="roundsGame()" />20
+                        </div>
                     </div>
                 </div>
 
-                <div>
-                    <div>
-                        <p><input type="radio" name="round" class="five" id="thirdRound" value="15"
-                                onchange="roundsGame()" />15</p>
+                <div class="score">
+                    <div class="user">USER</div>
+                    <div class="num">
+                        <h1 id="userScore">0</h1>
+                        <b>:</b>
+                        <h1 id="computerScore">0</h1>
                     </div>
-                    <div>
-                        <p><input type="radio" name="round" class="five" id="fourRound" value="20"
-                                onchange="roundsGame()" />20</p>
-                    </div>
+                    <div class="comp">COMP</div>
                 </div>
-            </div>
+            </section>
 
-            <div class="score">
-                <div class="user">USER</div>
-                <div class="num">
-                    <h1 id="userScore">0</h1>
-                    <b>:</b>
-                    <h1 id="computerScore">0</h1>
-                </div>
-                <div class="comp">COMP</div>
+            <div id="reSult">
+                <p>Lets play</p>
             </div>
+            <div id="winnershow"></div>
+
+            <section id="imggame">
+                <div id="butt">
+                    <button class="circle" id="Rock"></button>
+                    <button class="circle" id="Paper"></button>
+                    <button class="circle" id="Scissors"></button>
+                </div>
+                <div class="reset">
+                    <p>make your move</p><br>
+                    <button id="refresh">Restart</button>
+                </div>
+            </section>
+
         </article>
-
-        <div id="reSult">
-            <p>Lets play</p>
-        </div>
-        <div id="winnershow"></div>
-
-        <section id="imggame">
-            <div id="butt">
-                <button class="circle" id="Rock"></button>
-                <button class="circle" id="Paper"></button>
-                <button class="circle" id="Scissors"></button>
-            </div>
-            <div class="reset">
-                <p>make your move</p><br>
-                <button id="refresh">Reset</button>
-            </div>
-        </section>
 
     </main>
 
