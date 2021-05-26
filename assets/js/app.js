@@ -1,16 +1,14 @@
 var userScore = 0;
 var computerScore = 0;
-
 document.getElementById('Rock').onclick = startRock;
 document.getElementById('Paper').onclick = startPaper;
 document.getElementById('Scissors').onclick = startScissors;
-//const reSult = document.getElementById('reSult');
+//asking name 
+
+var name = window.prompt("Hi there!, What is your name?");
 
 
 
-//asking name and age before playing
-let playerName = window.prompt('Type your name');
-let playerAge = window.prompt('type your age');
 
 function startRock() {
   start("Rock");
@@ -54,56 +52,67 @@ function start(playerChoice) {
 
   const myplayerchoice = document.getElementById(playerChoice);
 
-  document.getElementById('reSult').innerHTML = "<p>You played <strong>" + playerChoice + "</strong>.The bot played <strong>" + computerChoice + "</strong>.</p>";
+  document.getElementById('reSult').innerHTML = "<p>you played <strong>" + playerChoice + "</strong>.computer played <strong>" + computerChoice + "</strong>.</p>";
+  document.getElementById("reSult").style.color = "#DA70D6";
 
   if (playerChoice === 'Rock') {
     if (computerChoice === 'Rock') {
       document.getElementById('reSult').innerHTML += "<p>😐YOU TIED.😐 </p>";
-      myplayerchoice.classList.add('buttonsgraw');
-      setTimeout(() => myplayerchoice.classList.remove('buttonsgraw'), 850);
+      document.getElementById("reSult").style.color = "#696969";
+      myplayerchoice.classList.add('button_graw');
+      setTimeout(() => myplayerchoice.classList.remove('button_graw'), 1000);
     } else if (computerChoice === 'Paper') {
       document.getElementById('reSult').innerHTML += "<p>😕YOU LOSE.😕 </p>";
-      myplayerchoice.classList.add('buttonsgred');
-      setTimeout(() => myplayerchoice.classList.remove('buttonsgred'), 850);
+      document.getElementById("reSult").style.color = "#B22222";
+      myplayerchoice.classList.add('button_red');
+      setTimeout(() => myplayerchoice.classList.remove('button_red'), 1000);
+
       computerScore++;
     } else if (computerChoice === 'Scissors') {
       document.getElementById('reSult').innerHTML += "<p>Congratulations:🔥YOU WIN!🚀 </p>";
-      myplayerchoice.classList.add('buttonsgreen');
-      setTimeout(() => myplayerchoice.classList.remove('buttonsgreen'), 850);
+      document.getElementById("reSult").style.color = "#228B22";
+      myplayerchoice.classList.add('button_green');
+      setTimeout(() => myplayerchoice.classList.remove('button_green'), 1000);
 
       userScore++;
     }
   } else if (computerChoice === 'Paper') {
     if (computerChoice === 'Rock') {
       document.getElementById('reSult').innerHTML += "<p> Congratulations: 🔥YOU WIN!🚀 </p>";
-      myplayerchoice.classList.add('buttonsgreen');
-      setTimeout(() => myplayerchoice.classList.remove('buttonsgreen'), 850);
+      document.getElementById("reSult").style.color = "#228B22";
+      myplayerchoice.classList.add('button_green');
+      setTimeout(() => myplayerchoice.classList.remove('button_green'), 1000);
       userScore++;
     } else if (computerChoice === 'Paper') {
       document.getElementById('reSult').innerHTML += "<p>😐YOU TIED.😐 </p>";
-      myplayerchoice.classList.add('buttonsgraw');
-      setTimeout(() => myplayerchoice.classList.remove('buttonsgraw'), 850);
+      document.getElementById("reSult").style.color = "#696969";
+      myplayerchoice.classList.add('button_graw');
+      setTimeout(() => myplayerchoice.classList.remove('button_graw'), 1000);
     } else if (computerChoice === 'Scissors') {
       document.getElementById('reSult').innerHTML += "<p>😕YOU LOSE.😕 </p>";
-      myplayerchoice.classList.add('buttonsgred');
-      setTimeout(() => myplayerchoice.classList.remove('buttonsgred'), 850);
+      document.getElementById("reSult").style.color = "#B22222";
+      myplayerchoice.classList.add('button_red');
+      setTimeout(() => myplayerchoice.classList.remove('button_gred'), 1000);
       computerScore++;
     }
   } else if (playerChoice === 'Scissors') {
     if (computerChoice == 'Rock') {
       document.getElementById('reSult').innerHTML += "<p>😕YOU LOSE.😕 </p>";
-      myplayerchoice.classList.add('buttonsgred');
-      setTimeout(() => myplayerchoice.classList.remove('buttonsgred'), 850);
+      document.getElementById("reSult").style.color = "#B22222";
+      myplayerchoice.classList.add('button_red');
+      setTimeout(() => myplayerchoice.classList.remove('button_red'), 1000);
       computerScore++;
     } else if (computerChoice === 'Paper') {
       document.getElementById('reSult').innerHTML += "<p>Congratulations:🔥YOU WIN!🚀 </p>";
-      myplayerchoice.classList.add('buttonsgreen');
-      setTimeout(() => myplayerchoice.classList.remove('buttonsgreen'), 850);
+      document.getElementById("reSult").style.color = "#228B22";
+      myplayerchoice.classList.add('button_nagreen');
+      setTimeout(() => myplayerchoice.classList.remove('button_green'), 1000);
       userScore++;
     } else if (computerChoice === 'Scissors') {
       document.getElementById('reSult').innerHTML += "<p>😐YOU TIED.😐 </p>";
-      myplayerchoice.classList.add('buttonsgraw');
-      setTimeout(() => myplayerchoice.classList.remove('buttonsgraw'), 850);
+      document.getElementById("reSult").style.color = "#696969";
+      myplayerchoice.classList.add('button_graw');
+      setTimeout(() => myplayerchoice.classList.remove('button_graw'), 1000);
     }
   }
 
