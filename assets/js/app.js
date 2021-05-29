@@ -29,6 +29,12 @@ else {
 
 }
 
+function roundsGame(number) {
+  roundCount = 0;
+  selectedRound = number;
+}
+
+
 
 
 function startRock() {
